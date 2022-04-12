@@ -46,6 +46,8 @@ const ListPage = () => {
       }
     };
     fetchData().then(setLoading(false));
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   const search = async (event) => {

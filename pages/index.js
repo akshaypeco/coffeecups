@@ -36,7 +36,8 @@ export default function Home() {
             lineHeight: 1.5,
           }}
         >
-          This dataset is for my senior Environmental Science thesis, where I'll
+          This dataset is for my senior Environmental Science thesis, where
+          {" I'll "}
           write about the consumer choices of sustainable firms - particularly
           coffee and boba shops - that offer incentives to bring your own
           reusable, portable, and sealable mug. I plan to analyze the speed and
@@ -57,9 +58,9 @@ export default function Home() {
           Step 3. Add your cafe and its discount (if it exists) to the list.
         </p>
         <p style={{ fontWeight: "500", marginTop: 10 }}>
-          Finally, if your shop doesn't offer any incentives, try to pitch the
-          idea! You can make your favorite spot a more sustainable part of your
-          community 🌎
+          Finally, if your shop {" doesn't "} offer any incentives, try to pitch
+          the idea! You can make your favorite spot a more sustainable part of
+          your community 🌎
         </p>
       </div>
     </div>
