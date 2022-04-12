@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -11,59 +10,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <div className={styles.main}>
+        <h1 className={styles.title}> ☕ 🧋</h1>
+        <p className={styles.subtitle}>
+          cataloging cafes that encourage reusable cups
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.buttonsContainer}>
+          <a href="/listpage">View list</a>
+          <a href="/addspot">Add spot</a>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <h2 style={{ marginBottom: 8, marginTop: 70 }}>Description:</h2>
+        <p
+          style={{
+            marginTop: 15,
+            marginBottom: 10,
+            marginLeft: 20,
+            marginRight: 20,
+            textAlign: "center",
+            fontSize: 18,
+            lineHeight: 1.5,
+          }}
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+          This dataset is for my senior Environmental Science thesis, where I'll
+          write about the consumer choices of sustainable firms - particularly
+          coffee and boba shops - that offer incentives to bring your own
+          reusable, portable, and sealable mug. I plan to analyze the speed and
+          geography of this transition, and how local legislation is helping or
+          hurting it.
+        </p>
+      </div>
+      <div className={styles.card1}>
+        <h5 style={{ margin: 0, padding: 0, marginTop: -8, marginBottom: 10 }}>
+          How to contribute:
+        </h5>
+        <p>
+          Step 1. Visit your favorite establishments and ask them if they let
+          you bring your own reusable mug.
+        </p>
+        <p>Step 2. If they do, ask them if they provide a discount.</p>
+        <p>
+          Step 3. Add your cafe and its discount (if it exists) to the list.
+        </p>
+        <p style={{ fontWeight: "500", marginTop: 10 }}>
+          Finally, if your shop doesn't offer any incentives, try to pitch the
+          idea! You can make your favorite spot a more sustainable part of your
+          community 🌎
+        </p>
+      </div>
     </div>
-  )
+  );
 }

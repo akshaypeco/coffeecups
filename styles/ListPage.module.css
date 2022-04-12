@@ -1,0 +1,329 @@
+.root {
+  background-color: white;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  min-width: 375px;
+}
+
+.introContainer {
+  margin-top: 0;
+}
+
+.legendContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.shopNameLegend {
+  margin-left: 15px;
+  background-color: whitesmoke;
+  padding: 5px 12px 5px 12px;
+  border-radius: 10px;
+}
+
+.updatedLegend {
+  margin-right: 108px;
+  background-color: whitesmoke;
+  padding: 5px 12px 5px 12px;
+  border-radius: 10px;
+}
+
+.discountLegend {
+  margin-right: 13px;
+  background-color: whitesmoke;
+  padding: 5px 12px 5px 12px;
+  border-radius: 10px;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.search {
+  padding: 13px 13px 13px 15px;
+  font-size: 18px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 2px;
+}
+
+.search:focus {
+    outline: none;
+    border: 1.5px solid rgb(158, 158, 158);
+}
+
+.searchResultsContainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  outline: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+}
+
+.searchResultsList {
+  list-style-type: none;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+.searchResult {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 20px 16px 20px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.searchResult:hover {
+  background-color: whitesmoke;
+}
+
+.searchResultLast {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px 12px 20px;
+}
+
+.shopNameAndLocation {
+  display: block;
+  width: 150px;
+  padding-right: 20px;
+  float: left;
+}
+
+.updated {
+  display: block;
+  margin-right: 105px;
+  width: 125px;
+}
+
+.discount {
+  display: block;
+  text-align: right;
+  width: 30px;
+  padding-right: 10px;
+}
+
+.addClassInput {
+  font-size: 16px;
+  height: 38px;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 2px;
+}
+
+.addClassInput:focus {
+  outline: none;
+  border: 1.5px solid rgb(158, 158, 158);
+}
+
+.addClassSearch:focus {
+  outline: 0.5px solid rgb(182, 182, 182) !important;
+}
+
+.addClassButton {
+  background-color: rgb(222, 222, 222);
+  color: black;
+  border: none !important;
+  height: 40px;
+  font-size: 23px;
+  padding-top: 2px;
+  width: 50px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.addClassButton:hover {
+  background-color: rgb(209, 209, 209);
+  color: black;
+}
+
+.currLocationButton {
+  background-color: rgb(222, 222, 222);
+  color: black;
+  border: none !important;
+  height: 40px;
+  font-size: 18px;
+  padding-top: 7px;
+  width: 60px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.currLocationButton:hover {
+  background-color: rgb(209, 209, 209);
+  color: black;
+}
+
+.searchSectionTopContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.shopNameContainer {
+  width: 60%;
+  margin-right: 30px;
+}
+
+.discountContainer {
+  width: 18%;
+  margin-right: 30px;
+
+}
+
+.coordinateContainer {
+  width: 58%;
+}
+
+.searchSectionBottomContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.cityContainer {
+  width: 30%;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.stateContainer {
+  width: 30%;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.descriptionContainer {
+  width: 30%;
+  margin-top: 10px;
+}
+
+@media (max-width: 1162px) {
+  .discountContainer {
+    width: 25%;
+  }
+}
+
+@media (max-width: 921px) {
+  .discountContainer {
+    width: 30%;
+  }
+}
+
+@media (max-width: 795px) {
+  .discountContainer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 660px) {
+  .searchSectionTopContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchSectionBottomContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shopNameContainer {
+    width: 90%;
+  }
+  
+  .discountContainer {
+    width: 30%;
+    margin-top: 12px;
+  }
+  
+  .coordinateContainer {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .cityContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .stateContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .descriptionContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 530px) {
+  .searchContainer {
+    padding-right: 15px;
+  }
+
+  .shopNameLegend {
+    margin-left: 15px;
+  }
+  
+  .updatedLegend {
+    margin-right: 40px;
+  }
+  
+  .discountLegend {
+    margin-right: 13px;
+  }
+
+  .shopNameAndLocation {
+    display: block;
+    width: 110px;
+    padding-right: 10px;
+    float: left;
+  }
+
+  .updated {
+    display: block;
+    margin-right: 30px;
+    width: 125px;
+  }
+
+  .discount {
+    display: block;
+    text-align: right;
+  }
+
+  .discountContainer {
+    width: 50%;
+    margin-top: 12px;
+  }
+
+  .cityContainer {
+    margin-top: 12px;
+  }
+
+  .stateContainer {
+    margin-top: 12px;
+  }
+
+  .descriptionContainer {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
