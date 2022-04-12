@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -16,8 +17,12 @@ export default function Home() {
           cataloging cafes that encourage reusable cups
         </p>
         <div className={styles.buttonsContainer}>
-          <a href="/listpage">View list</a>
-          <a href="/addspot">Add spot</a>
+          <Link href={"/listpage"}>
+            <a>View list</a>
+          </Link>
+          <Link href={"/addspot"}>
+            <a>Add spot</a>
+          </Link>
         </div>
         <h2 style={{ marginBottom: 8, marginTop: 70 }}>Description:</h2>
         <p
