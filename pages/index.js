@@ -47,11 +47,11 @@ export default function Home() {
       </div>
       <div className={styles.card1}>
         <h5 style={{ margin: 0, padding: 0, marginTop: -8, marginBottom: 10 }}>
-          How to contribute:
+          Add your cafe:
         </h5>
         <p>
-          Step 1. Visit your favorite establishments and ask them if they let
-          you bring your own reusable mug.
+          Step 1. Next time you visit your coffee shop, ask them if they let you
+          bring your own reusable mug.
         </p>
         <p>Step 2. If they do, ask them if they provide a discount.</p>
         <p>
