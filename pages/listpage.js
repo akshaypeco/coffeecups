@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styles from "../styles/ListPage.module.css";
 import { FaLocationArrow } from "react-icons/fa";
-import { IoIosArrowDropdown } from "react-icons/io";
+import { GrAdd } from "react-icons/gr";
 import axios from "axios";
 import Head from "next/head";
 
@@ -308,7 +308,7 @@ const ListPage = () => {
                       name="description"
                     />
                     <button type="submit" className={styles.submitButton}>
-                      {"+"}
+                      <GrAdd />
                     </button>
                   </div>
                 </div>

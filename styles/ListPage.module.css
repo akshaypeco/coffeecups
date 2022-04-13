@@ -141,11 +141,12 @@
   background-color: rgb(222, 222, 222);
   color: black;
   border: none !important;
-  font-size: 23px;
-  padding-top: 2px;
-  width: 50px;
+  font-size: 20px;
+  width: 3.2rem;
+  padding-top: 0.29rem;
   border-radius: 5px;
-  margin-left: 5px;
+  margin-left: 0.3rem;
+
 }
 
 .submitButton:hover {
@@ -158,10 +159,10 @@
   color: black;
   border: none !important;
   font-size: 18px;
-  padding-top: 7px;
-  width: 50px;
+  padding-top: 0.29rem;
+  width: 3.2rem;
   border-radius: 5px;
-  margin-left: 5px;
+  margin-left: 0.3rem;
 }
 
 .currLocationButton:hover {
