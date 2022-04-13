@@ -308,7 +308,7 @@ const ListPage = () => {
                       name="description"
                     />
                     <button type="submit" className={styles.submitButton}>
-                      +
+                      {"+"}
                     </button>
                   </div>
                 </div>

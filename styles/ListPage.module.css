@@ -324,23 +324,4 @@
     width: 100%;
     margin-top: 12px;
   }
-
-  .submitButton {
-    font-size: 21px;
-    padding-top: 0px;
-    padding-bottom: 2px;
-    padding-right: 2px;
-    width: 50px;
-    border-radius: 5px;
-    margin-left: 5px;
-  }
-  
-  .currLocationButton {
-    font-size: 18px;
-    padding-top: 7px;
-    padding-right: 3px;
-    width: 50px;
-    border-radius: 5px;
-    margin-left: 5px;
-  }
 }
