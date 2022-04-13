@@ -210,7 +210,7 @@
 }
 
 .descriptionContainer {
-  width: 30%;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -282,7 +282,7 @@
   }
   
   .updatedLegend {
-    margin-right: 40px;
+    margin-right: 37px;
   }
   
   .discountLegend {
@@ -330,10 +330,9 @@
     color: black;
     border: none !important;
     font-size: 20px;
-    width: 3.2rem;
+    width: 2.8rem;
     padding-top: 0.29rem;
     border-radius: 5px;
     margin-left: 0.3rem;
-    padding-left: -0.29rem;
   }
 }
