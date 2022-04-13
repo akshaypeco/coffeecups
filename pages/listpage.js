@@ -159,12 +159,12 @@ const ListPage = () => {
                     )}
                     {shop.discount >= 1 && (
                       <div className={styles.discount}>
-                        {"$" + shop.discount}
+                        {shop.discount + "%"}
                       </div>
                     )}
                     {shop.discount < 1 && shop.discount > 0 && (
                       <div className={styles.discount}>
-                        {shop.discount + "%"}
+                        {"$" + shop.discount}
                       </div>
                     )}
                   </div>
