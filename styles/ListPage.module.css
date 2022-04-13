@@ -334,6 +334,6 @@
     padding-top: 0.29rem;
     border-radius: 5px;
     margin-left: 0.3rem;
-    padding-right: 0.29rem;
+    padding-left: -0.29rem;
   }
 }
