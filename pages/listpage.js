@@ -5,6 +5,7 @@ import styles from "../styles/ListPage.module.css";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoIosArrowDropdown } from "react-icons/io";
 import axios from "axios";
+import Head from "next/head";
 
 const ListPage = () => {
   const [searchRes, setSearchRes] = useState([]);
