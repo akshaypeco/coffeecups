@@ -154,16 +154,17 @@ const ListPage = () => {
                         {Date(shop.created).substring(4, 16)}
                       </p>
                     </div>
-                    {shop.discount == 0 ? (
+                    {shop.discount == 0 && (
                       <div className={styles.discount}>No</div>
-                    ) : null}
-                    {shop.discount >= 1 ? (
-                      <div className={styles.discount}>
-                        {shop.discount + "%"}
-                      </div>
-                    ) : (
+                    )}
+                    {shop.discount >= 1 && (
                       <div className={styles.discount}>
                         {"$" + shop.discount}
+                      </div>
+                    )}
+                    {shop.discount < 1 && shop.discount > 0 && (
+                      <div className={styles.discount}>
+                        {shop.discount + "%"}
                       </div>
                     )}
                   </div>
@@ -191,6 +192,7 @@ const ListPage = () => {
                     placeholder="Blue Bottle"
                     type="text"
                     name="shopname"
+                    required
                   />
                 </div>
 
@@ -264,6 +266,7 @@ const ListPage = () => {
                       placeholder="Berkeley"
                       type="text"
                       name="city"
+                      required
                     />
                   </div>
                 </div>
@@ -285,6 +288,7 @@ const ListPage = () => {
                       placeholder="California"
                       type="text"
                       name="state"
+                      required
                     />
                   </div>
                 </div>
