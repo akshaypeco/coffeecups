@@ -321,7 +321,19 @@
   }
 
   .descriptionContainer {
-    width: 80%;
+    width: 100%;
     margin-top: 12px;
+  }
+
+  .submitButton {
+    background-color: rgb(222, 222, 222);
+    color: black;
+    border: none !important;
+    font-size: 20px;
+    width: 3.2rem;
+    padding-top: 0.29rem;
+    border-radius: 5px;
+    margin-left: 0.3rem;
+    padding-right: 0.29rem;
   }
 }
