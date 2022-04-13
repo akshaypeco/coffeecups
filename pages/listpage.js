@@ -307,7 +307,7 @@ const ListPage = () => {
                       type="text"
                       name="description"
                     />
-                    <button type="submit" className={styles.addClassButton}>
+                    <button type="submit" className={styles.submitButton}>
                       +
                     </button>
                   </div>

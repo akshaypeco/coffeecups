@@ -137,18 +137,18 @@
   outline: 0.5px solid rgb(182, 182, 182) !important;
 }
 
-.addClassButton {
+.submitButton {
   background-color: rgb(222, 222, 222);
   color: black;
   border: none !important;
-  font-size: 23px;
+  font-size: 20px;
   padding-top: 2px;
   width: 50px;
   border-radius: 5px;
   margin-left: 5px;
 }
 
-.addClassButton:hover {
+.submitButton:hover {
   background-color: rgb(209, 209, 209);
   color: black;
 }
@@ -159,9 +159,9 @@
   border: none !important;
   font-size: 18px;
   padding-top: 7px;
-  width: 60px;
-  margin-left: 5px;
+  width: 50px;
   border-radius: 5px;
+  margin-left: 5px;
 }
 
 .currLocationButton:hover {
