@@ -95,6 +95,11 @@ const ListPage = () => {
 
   return (
     <div className={styles.root}>
+      <Head>
+        <title>Find a cafe</title>
+        <meta name="description" content="find eco-friendly cafes" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.introContainer}>
         <h1
           style={{
