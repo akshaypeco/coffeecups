@@ -326,13 +326,6 @@
   }
 
   .submitButton {
-    background-color: rgb(222, 222, 222);
-    color: black;
-    border: none !important;
-    font-size: 20px;
-    width: 2.8rem;
-    padding-top: 0.29rem;
-    border-radius: 5px;
-    margin-left: -3rem;
+    padding-left: -3rem;
   }
 }
