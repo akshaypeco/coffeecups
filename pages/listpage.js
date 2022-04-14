@@ -79,6 +79,7 @@ const ListPage = () => {
 
     await axios
       .put("/api/addpost", data)
+      .then(alert("Submitted, thanks! You may need to refresh to see changes."))
       .then(setLoading(true))
       .catch((err) => {
         if (err.response) {
@@ -99,7 +100,7 @@ const ListPage = () => {
       <Head>
         <title>Find a cafe</title>
         <meta name="description" content="find eco-friendly cafes" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/coffee_cup.svg" />
       </Head>
       <div className={styles.introContainer}>
         <h1
@@ -134,40 +135,57 @@ const ListPage = () => {
             allShops.map((shop) => (
               <div key={shop.id}>
                 <a className={styles.searchResult}>
-                  <div className={styles.shopNameAndLocation}>
-                    <p style={{ margin: 0, padding: 0 }}>{shop.shopname}</p>
-                    <p
-                      style={{
-                        margin: 0,
-                        padding: 0,
-                        marginTop: 2,
-                        fontSize: 15,
-                        color: "grey",
-                      }}
-                    >
-                      {shop.city}, {shop.state}{" "}
-                    </p>
-                  </div>
-                  <div style={{ display: "flex", marginLeft: "auto" }}>
-                    <div className={styles.updated}>
-                      <p style={{ margin: 0, padding: 0 }}>
-                        {Date(shop.created).substring(4, 16)}
+                  <div className={styles.topSectionDocContainer}>
+                    <div className={styles.shopNameAndLocation}>
+                      <p style={{ margin: 0, padding: 0 }}>{shop.shopname}</p>
+                      <p
+                        style={{
+                          margin: 0,
+                          padding: 0,
+                          marginTop: 2,
+                          fontSize: 15,
+                          color: "grey",
+                        }}
+                      >
+                        {shop.city}, {shop.state}{" "}
                       </p>
                     </div>
-                    {shop.discount == 0 && (
-                      <div className={styles.discount}>No</div>
-                    )}
-                    {shop.discount >= 1 && (
-                      <div className={styles.discount}>
-                        {shop.discount + "%"}
+                    <div style={{ display: "flex" }}>
+                      <div className={styles.updated}>
+                        <p style={{ margin: 0, padding: 0 }}>
+                          {Date(shop.created).substring(4, 16)}
+                        </p>
                       </div>
-                    )}
-                    {shop.discount < 1 && shop.discount > 0 && (
-                      <div className={styles.discount}>
-                        {"$" + shop.discount}
-                      </div>
-                    )}
+                      {shop.discount == 0 && (
+                        <div className={styles.discount}>No</div>
+                      )}
+                      {shop.discount >= 1 && (
+                        <div className={styles.discount}>
+                          {shop.discount + "%"}
+                        </div>
+                      )}
+                      {shop.discount < 1 && shop.discount > 0 && (
+                        <div className={styles.discount}>
+                          {"$" + shop.discount}
+                        </div>
+                      )}
+                    </div>
                   </div>
+                  {shop.description != "" && (
+                    <div className={styles.bottomSectionDocContainer}>
+                      <p
+                        style={{
+                          margin: 0,
+                          padding: 0,
+                          marginTop: 3,
+                          fontSize: 14,
+                          color: "grey",
+                        }}
+                      >
+                        "{shop.description}"
+                      </p>
+                    </div>
+                  )}
                 </a>
               </div>
             ))

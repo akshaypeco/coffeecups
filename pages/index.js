@@ -8,13 +8,26 @@ export default function Home() {
       <Head>
         <title>coffeecups</title>
         <meta name="description" content="find eco-friendly cafes" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/coffee_cup.svg" />
       </Head>
 
       <div className={styles.main}>
         <h1 className={styles.title}> ☕ 🧋</h1>
         <p className={styles.subtitle}>
-          cataloging cafes that encourage reusable cups
+          Coffee Shops that accept reusable cups
+        </p>
+        <p
+          style={{
+            margin: 0,
+            padding: 0,
+            paddingBottom: 40,
+            textAlign: "center",
+            marginLeft: 30,
+            marginRight: 30,
+          }}
+        >
+          A crowd-sourced list of cafés and coffee shops around the United
+          States that encourage reusable cups, some even giving discounts.
         </p>
         <div className={styles.buttonsContainer}>
           <Link href={"/listpage"}>
@@ -24,26 +37,6 @@ export default function Home() {
             <a>Add spot</a>
           </Link>
         </div>
-        <h2 style={{ marginBottom: 8, marginTop: 70 }}>Description:</h2>
-        <p
-          style={{
-            marginTop: 15,
-            marginBottom: 10,
-            marginLeft: 20,
-            marginRight: 20,
-            textAlign: "center",
-            fontSize: 18,
-            lineHeight: 1.5,
-          }}
-        >
-          This dataset is for my senior Environmental Science thesis, where
-          {" I'll "}
-          write about the consumer choices of sustainable firms - particularly
-          coffee and boba shops - that offer incentives to bring your own
-          reusable, portable, and sealable mug. I plan to analyze the speed and
-          geography of this transition, and how local legislation is helping or
-          hurting it.
-        </p>
       </div>
       <div className={styles.card1}>
         <h5 style={{ margin: 0, padding: 0, marginTop: -8, marginBottom: 10 }}>

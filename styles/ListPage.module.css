@@ -79,7 +79,7 @@
 
 .searchResult {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 18px 20px 16px 20px;
@@ -99,6 +99,15 @@
   padding: 12px 20px 12px 20px;
 }
 
+.topSectionDocContainer {
+  width: 100%;
+}
+
+.bottomSectionDocContainer {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .shopNameAndLocation {
   display: block;
   width: 150px;
@@ -108,15 +117,15 @@
 
 .updated {
   display: block;
-  margin-right: 105px;
+  margin-left: auto;
+  margin-right: 80px;
   width: 125px;
 }
 
 .discount {
   display: block;
   text-align: right;
-  width: 30px;
-  padding-right: 10px;
+  width: 60px;
 }
 
 .addClassInput {
@@ -282,7 +291,7 @@
   }
   
   .updatedLegend {
-    margin-right: 37px;
+    margin-right: 20px;
   }
   
   .discountLegend {
