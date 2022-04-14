@@ -182,7 +182,9 @@ const ListPage = () => {
                           color: "grey",
                         }}
                       >
-                        "{shop.description}"
+                        {'"'}
+                        {shop.description}
+                        {'"'}
                       </p>
                     </div>
                   )}
